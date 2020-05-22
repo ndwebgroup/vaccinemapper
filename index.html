@@ -33,15 +33,10 @@
 <meta name="theme-color" content="#002b5c">
 <link rel="stylesheet" href="https://conductor.nd.edu/stylesheets/themes/ndt/v3/ndt.css">
 <style>
-  iframe {width:100vw; height:100%; min-height:800px; grid-row:content-start/content-end;}
   .site-title-group {margin:0; padding-bottom:1.2rem;}
   .site-content {padding:0;}
-
-  /* 960px
-  ----------------------------------------------------*/
-  @media only screen and (min-width:60em) {
-    iframe {min-height:1400px;}
-  }
+  .arcgis {height:100%; min-height:100vh; grid-row:content-start/content-end; grid-column:1/-1;}
+  .iframe-arcgis {width:100vw; height:100vh; }
 </style>
 </head>
 
@@ -68,7 +63,7 @@
 
   <!-- Site Content -->
   <main id="content" class="site-content">
-    <div id="arcgis"></div>
+    <div id="arcgis" class="arcgis"></div>
   </main>
 
   <!-- Site Footer -->
@@ -126,7 +121,7 @@
   var mobile = '9c58e454acaf47fbb4fc142c3a5c8ba6';
   var desktop = 'd3e2404dd69842a0b615b960c9b576ff';
   var chart = (window.innerWidth < 1024) ? mobile : desktop;
-  var iframe = '<iframe title="Vaccine Mapper dashboard" width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://notredame.maps.arcgis.com/apps/opsdashboard/index.html#/'+ chart +'"></iframe>';
+  var iframe = '<iframe class="iframe-arcgis" title="Vaccine Mapper dashboard" width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://notredame.maps.arcgis.com/apps/opsdashboard/index.html#/'+ chart +'"></iframe>';
   document.getElementById('arcgis').innerHTML = iframe;
 </script>
 </body>
