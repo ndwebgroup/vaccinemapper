@@ -1,6 +1,8 @@
 # Vaccine Mapper
 
-UI wrapper for CRC ArcGis project
+UI wrapper for CRC ArcGis project.
+
+URL: https://vaccinemapper.nd.edu/
 
 Contacts:
 
