@@ -1,6 +1,10 @@
 # Vaccine Mapper
 
-UI wrapper for CRC ArcGis project
+UI wrapper for CRC ArcGis project.
+
+URL: https://vaccinemapper.nd.edu/
+
+Run and generate `_site` files using `jekyll serve`
 
 Contacts:
 
